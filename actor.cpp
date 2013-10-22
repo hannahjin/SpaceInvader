@@ -367,11 +367,6 @@ TorpedoGoodie::TorpedoGoodie(int startX, int startY, StudentWorld* sw)
 EnergyGoodie::EnergyGoodie(int startX, int startY, StudentWorld* sw)
 : Goodie(IID_ENERGY_GOODIE, startX, startY, sw) {}
 
-//void FreeShipGoodie::doSomething()
-//{
-//    if (!getWorld()->collide(this, getX(), getY()) )
-//         Goodie::doSomething();
-//}
 
 void FreeShipGoodie::pickedUp()
 { getWorld()->incLives(); }
